@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippets" inherit_id="website.snippets" name="Anime Hero">
+    <xpath expr="//*[@id='default_snippets']" position="before">
+        <t id="comic_theme_snippets">
+            <div id="comic_theme_snippets_category" class="o_panel">
+                <!-- <div class="o_panel_header">Theme</div> -->
+                <div class="o_panel_body">
+                    <t t-snippet="website_comic.s_anime_hero" t-thumbnail="/website_comic/static/src/img/wbuilder/template_header_opt.jpg">
+                        <!-- <keywords>Snippet</keywords> -->
+                    </t>
+                </div>
+            </div>
+        </t>
+    </xpath>
+</template>
+</odoo>

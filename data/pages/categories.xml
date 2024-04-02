@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="page_categories" model="website.page">
+    <field name="name">Categories</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_comic.categories</field>
+    <field name="url">/categories</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_comic.categories">
+
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure">
+
+                    <!-- Content -->
+                    <div class="b1-bg position-relative d-flex justify-content-center align-items-center" style="background-image: url('/web/image/website_comic.manga_banner'); background-repeat: no-repeat;">
+                        <h1 class="text-center text-primary p-3 z-1" style="z-index: 1;">Categories</h1>
+                    </div>
+                    <div class="container my-5 ">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-4">
+                                <img src="/web/image/website_comic.shonen_icon" alt="Shonen Manga" class="w-100"/>
+                            </div>
+                            <div class="col-7">
+                                <h3>Shonen</h3>
+                                <p>Shonen manga is an editorial category of Japanese comics targeting an audience of Japanese comics targeting an audience of adolescent boys.Of the four primary demographic categories of manga, shōnen is the most popular category in the Japanese market. While shōnen manga ostensibly targets an audience of young males, its actual readership extends significantly beyond this target group to include all ages and genders</p>
+                            </div>
+                        </div>
+                        <div class="my-5">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-7 text-right">
+                                    <h3>Seinen</h3>
+                                    <p>Seinen manga covers a wide range of genres, including action, politics, science fiction, fantasy, romance, sports, and even humor. However, seinen manga tend to deal with more mature themes than shonen manga.  This can include violence, gore, profanity, and sexual content.  Seinen manga also tend to have more complex storylines and character development.</p>
+                                </div>
+                                <div class="col-4">
+                                    <img src="/web/image/website_comic.seinen_icon" alt="Seinen Manga" class="w-100" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-5 justify-content-between align-items-center">
+                            <div class="col-4">
+                                <img src="/web/image/website_comic.josei_icon" alt="Josei Manga" class="w-100" />
+                            </div>
+                            <div class="col-7">
+                                <h3>Josei</h3>
+                                <p>Josei manga differs from shojo manga, which is aimed at younger girls and young adult women, by focusing on more mature themes like work life, university life, marriage, divorce, and intimacy. Josei romance manga often features more complex and realistic relationships than shojo romances.</p>
+                            </div>
+                        </div>
+                        <div class="row my-5 justify-content-between align-items-center">
+                            <div class="col-7">
+                                <h3>Shojo</h3>
+                                <p>Shojo manga is a demographic of Japanese comics aimed at young women and adolescent girls. While shojo manga can encompass a wide variety of genres, it often features storylines that center around romance, friendship, and coming-of-age experiences. The art style is typically characterized by large, expressive eyes, detailed hair, and slender figures. </p>
+                            </div>
+                            <div class="col-4">
+                                <img src="/web/image/website_comic.shojo_icon" alt="Shojo Manga" class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+
+        </t>
+    </field>
+</record>
+</odoo>

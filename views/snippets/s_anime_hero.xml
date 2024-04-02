@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_anime_hero">
+        <section class="s_anime_hero parallax s_parallax_is_fixed s_parallax_no_overflow_hidden" data-scroll-background-ratio="1">
+            <span class="s_parallax_bg oe_img_bg o_bg_img_center o_we_bg_filter bg-black-50" style="background-image: url('/web/image/website_comic.anime_banner'); background-position: 50% 75%;"/>
+            <div class="container h-50">
+            <!-- Content -->
+                <h1 class="text-center">
+                    Lose Yourself in the Pages.
+                </h1>
+                <p class="text-center">
+                    Explore our curated selection of exceptional manga.
+                </p>
+            </div>
+        </section>
+    </template>
+</odoo>

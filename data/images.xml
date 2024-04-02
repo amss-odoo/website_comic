@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- logo  -->
+    <record id="anime_logo" model="ir.attachment">
+        <!-- <field name="logo" type="base64" file="website_comic/static/src/img/content/anime.png"/> -->
+        <field name="name">quickship_logo</field>
+        <field name="datas" type="base64" file="website_comic/static/src/img/content/anime.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!-- manga menu banner  -->
+    <record id="manga_banner" model="ir.attachment">
+        <field name="name">manga_banner</field>
+        <field name="datas" type="base64" file="website_comic/static/src/img/content/banner-1.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!-- anime menu banner  -->
+    <record id="anime_banner" model="ir.attachment">
+        <field name="name">anime_banner</field>
+        <field name="datas" type="base64" file="website_comic/static/src/img/content/banner-2.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record> 
+
+    <!-- categories images    -->
+    <record id="shonen_icon" model="ir.attachment">
+        <field name="name">shonen_icon</field>
+        <field name="datas" type="base64" file="website_comic/static/src/img/content/shonen.jpeg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record> 
+
+    <record id="seinen_icon" model="ir.attachment">
+        <field name="name">seinen_icon</field>
+        <field name="datas" type="base64" file="website_comic/static/src/img/content/seinen.jpeg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="josei_icon" model="ir.attachment">
+        <field name="name">josei_icon</field>
+        <field name="datas" type="base64" file="website_comic/static/src/img/content/josei.jpeg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="shojo_icon" model="ir.attachment">
+        <field name="name">shojo_icon</field>
+        <field name="datas" type="base64" file="website_comic/static/src/img/content/shojo.jpeg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+    <!-- footer-background  -->
+    <record id="comic_footer_bg" model="ir.attachment">
+        <field name="name">comic_footer_bg</field>
+        <field name="datas" type="base64" file="website_comic/static/src/img/wbuilder/template_header_opt.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+</odoo>

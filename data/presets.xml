@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- changing header logo  -->
+    <record id="website.default_website" model="website">
+        <field name="logo" type="base64" file="website_comic/static/src/img/content/anime.png"/>
+    </record>
+    <!-- deactivating default header  -->
+    <record id="website.template_header_default" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+    <!-- custom header -->
+    <template id="layout" inherit_id="website.layout" name="Welcome Message">
+        <xpath expr="//header" position="before">
+            <!-- Content -->
+            <p class="p-2 bg-secondary text-center text-primary m-0 fs-2">Looking for a recommendation?</p>
+        </xpath>
+    </template>
+
+    <!-- themed-header-option  -->
+    <!-- <template id="template_header_opt" inherit_id="website.snippet_options" name="Header Template - Option">
+        <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+            <we-button title="comic"
+                data-customize-website-views="website_comic.header"
+                data-customize-website-variable="'comic'"  data-img="/website_comic/static/src/img/wbuilder/template_header_opt.jpg"/>
+        </xpath>
+    </template> -->
+<!-- deactivatiing default footer  -->
+    <record id="website.footer_custom" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+    <!-- no copyright  -->
+    <record id="website.footer_no_copyright" model="ir.ui.view">
+        <field name="active" eval="True"/>
+    </record>
+
+    <!-- themed-footer-option  -->
+    <!-- <template id="template_footer_opt" inherit_id="website.snippet_options" name="Footer Template - Option">
+        <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
+            <we-button title="comic"
+                data-customize-website-views="website_comic.footer"
+                data-customize-website-variable="'comic'"
+                data-img="/website_comic/static/src/img/wbuilder/template_header_opt.jpg"/>
+        </xpath>
+    </template> -->
+</odoo>

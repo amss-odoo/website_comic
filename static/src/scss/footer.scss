@@ -1,0 +1,14 @@
+.bg-img{
+    background-image: url('/web/image/website_comic.comic_footer_bg');
+}
+
+.bg-img::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}

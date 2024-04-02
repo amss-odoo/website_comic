@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- delete home -->
+    <delete model="website.menu" search="[('url','in', ['/', '/']), ('website_id', '=', 1)]"/>
+
+    <delete model="website.menu" search="[('url','in', ['/', '/contactus']), ('website_id', '=', 1)]"/>
+    <!-- <delete model="website.menu" search="[('url','in', ['/', '/#']), ('website_id', '=', 1)]"/> -->
+
+
+    <!-- custom menu  -->
+    <record id="manga_menu" model="website.menu">
+        <field name="name">Manga</field>
+        <field name="url">/manga</field>
+        <field name="parent_id" search="[
+            ('url', '=', '/default-main-menu'),
+            ('website_id', '=', 1)]"/>
+        <field name="website_id">1</field>
+        <field name="sequence" type="int">1</field>
+    </record>
+    <!-- sub-menu of manga  -->
+    <record id="categories_menu" model="website.menu">
+        <field name="name">Categories</field>
+        <field name="url">/categories</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_comic.manga_menu"/>
+        <field name="sequence" type="int">1</field>
+    </record>
+    <record id="popular_menu" model="website.menu">
+        <field name="name">Popular</field>
+        <field name="url">/dropdown/popular</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_comic.manga_menu"/>
+        <field name="sequence" type="int">2</field>
+    </record>
+
+    <!-- anime menu  -->
+    <record id="anime_menu" model="website.menu">
+        <field name="name">Anime</field>
+        <field name="url">/anime</field>
+        <field name="parent_id" search="[
+            ('url', '=', '/default-main-menu'),
+            ('website_id', '=', 1)]"/>
+        <field name="website_id">1</field>
+        <field name="sequence" type="int">2</field>
+    </record>
+    <!-- sub-menu of anime  -->
+    <record id="studio_menu" model="website.menu">
+        <field name="name">Studios</field>
+        <field name="url">/dropdown/studio</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_comic.anime_menu"/>
+        <field name="sequence" type="int">1</field>
+    </record>
+    <record id="characters_menu" model="website.menu">
+        <field name="name">Characters</field>
+        <field name="url">/dropdown/characters</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_comic.anime_menu"/>
+        <field name="sequence" type="int">2</field>
+    </record>
+
+    <!-- recommendation menu  -->
+    <!-- <record id="recom_menu" model="website.menu">
+        <field name="name">Recommendations</field>
+        <field name="url">/recom</field>
+        <field name="parent_id" search="[
+            ('url', '=', '/default-main-menu'),
+            ('website_id', '=', 1)]"/>
+        <field name="website_id">1</field>
+        <field name="sequence" type="int">3</field>
+    </record> -->
+
+    <!-- <record id="recom_mega_menu" model="website.menu">
+        <field name="name">Recommendations</field>
+        <field name="url">/recom</field>
+        <field name="parent_id" search="[
+            ('url', '=', '/default-main-menu'),
+            ('website_id', '=', 1)]"/>
+        <field name="website_id">1</field>
+        <field name="sequence" type="int">1</field>
+        <field name="is_mega_menu" eval="True"/> 
+        <field name="mega_menu_classes">pd-3</field>
+        <field name="mega_menu_content" type="html">
+            Content
+        </field>
+    </record> -->
+    <!-- <record id="recom_megam" model="" -->
+</odoo>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- header  -->
+    <!-- <record id="header" model="ir.ui.view">
+        <field name="name">Comic Header</field>
+        <field name="type">qweb</field>
+        <field name="key">website_comic.header</field>
+        <field name="inherit_id" ref="website.layout"/>
+        <field name="mode">extension</field>
+        <field name="arch" type="xml">
+            <xpath expr="//header//nav" position="replace">
+                <t t-call="website.placeholder_header_brand">
+                    <t t-set="_link_class" t-valuef="mx-auto mw-100"/>
+                </t>
+                <div class="d-flex justify-content-center bg-secondary fs-5 list-unstyled">
+                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                        <t t-call="website.submenu">
+                            <t t-set="item_class" t-valuef="nav-item"/>
+                            <t t-set="link_class" t-valuef="nav-link"/>
+                        </t>
+                    </t>
+                </div>
+            </xpath>
+        </field>
+    </record> -->
+    <!-- footer  -->
+    <!-- <record id="footer" model="ir.ui.view">
+        <field name="name">Comic Footer</field>
+        <field name="type">qweb</field>
+        <field name="key">website_comic.footer</field>
+        <field name="inherit_id" ref="website.layout"/>
+        <field name="mode">extension</field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='footer']" position="replace">
+                <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                                   <div class="p-2 d-flex justify-content-center align-items-center bg-secondary">
+                        <p class="fs-3 text-primary">
+                            Only the greatest from the 🐐
+                        </p>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record> -->
+</odoo>

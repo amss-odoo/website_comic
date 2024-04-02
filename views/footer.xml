@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- themed-footer-option  -->
+    <template id="template_footer_opt" inherit_id="website.snippet_options" name="Footer Template - Option">
+        <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
+            <we-button title="comic"
+                data-customize-website-views="website_comic.footer"
+                data-customize-website-variable="'comic'"
+                data-img="/website_comic/static/src/img/wbuilder/template_header_opt.jpg"/>
+        </xpath>
+    </template>
+
+    <!-- themed-footer  -->
+    <record id="footer" model="ir.ui.view">
+        <field name="name">Comic Footer</field>
+        <field name="type">qweb</field>
+        <field name="key">website_comic.footer</field>
+        <field name="inherit_id" ref="website.layout"/>
+        <field name="mode">extension</field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='footer']" position="replace">
+                <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <!-- Content -->
+                    <div class="p-2 d-flex justify-content-center align-items-center bg-secondary bg-img position-relative">
+                        <p class="z-1 fs-2 text-primary" style="z-index: 1;">
+                            Only the greatest from the 🐐
+                        </p>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

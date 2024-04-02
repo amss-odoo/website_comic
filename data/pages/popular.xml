@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="page_popular" model="website.page">
+    <field name="name">Popular</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_comic.popular</field>
+    <field name="url">/popular</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_comic.page_popular">
+
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure">
+
+                    
+
+                </div>
+            </t>
+
+        </t>
+    </field>
+</odoo>
