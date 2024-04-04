@@ -15,7 +15,7 @@
             ('url', '=', '/default-main-menu'),
             ('website_id', '=', 1)]"/>
         <field name="website_id">1</field>
-        <field name="sequence" type="int">1</field>
+        <field name="sequence" type="int">2</field>
     </record>
     <!-- sub-menu of manga  -->
     <record id="categories_menu" model="website.menu">
@@ -41,7 +41,7 @@
             ('url', '=', '/default-main-menu'),
             ('website_id', '=', 1)]"/>
         <field name="website_id">1</field>
-        <field name="sequence" type="int">2</field>
+        <field name="sequence" type="int">3</field>
     </record>
     <!-- sub-menu of anime  -->
     <record id="studio_menu" model="website.menu">
@@ -81,7 +81,18 @@
         <field name="is_mega_menu" eval="True"/> 
         <field name="mega_menu_classes">pd-3</field>
         <field name="mega_menu_content" type="html">
-            Content
+            <section>
+                <t t-call="website.navbar">
+                        <div class="row">
+                            <div class="col-4 h-25">
+                                <img src="/web/image/website_comic.shonen_icon" alt="Shonen Manga" class="w-100"/>
+                            </div>
+                            <div class="col-6 p-2">
+                                <p> One piece is nice </p>
+                            </div>
+                        </div>
+                </t>
+            </section>
         </field>
     </record> -->
     <!-- <record id="recom_megam" model="" -->

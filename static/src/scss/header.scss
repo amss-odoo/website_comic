@@ -1,0 +1,14 @@
+.user-menu a{
+    color: $primary;
+}
+
+img.img {
+    height: 3.5rem !important;
+}
+
+.dropdown-menu{
+    background-color: $secondary;
+    a{
+        color: $primary;
+    }
+}

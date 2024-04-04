@@ -25,6 +25,22 @@
         <field name="public" eval="True"/>
     </record> 
 
+    <!-- login background  -->
+    <record id="login_bg" model="ir.attachment">
+        <field name="name">login_bg</field>
+        <field name="datas" type="base64" file="website_comic/static/src/img/content/login-bg.jpeg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!-- login-icon -->
+    <record id="login_icon" model="ir.attachment">
+        <field name="name">login_icon</field>
+        <field name="datas" type="base64" file="website_comic/static/src/img/content/login-icon.jpeg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
     <!-- categories images    -->
     <record id="shonen_icon" model="ir.attachment">
         <field name="name">shonen_icon</field>

@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_anime_hero">
-        <section class="s_anime_hero parallax s_parallax_is_fixed s_parallax_no_overflow_hidden" data-scroll-background-ratio="1">
-            <span class="s_parallax_bg oe_img_bg o_bg_img_center o_we_bg_filter bg-black-50" style="background-image: url('/web/image/website_comic.anime_banner'); background-position: 50% 75%;"/>
-            <div class="container h-50">
+    <template id="s_anime_hero" name="Anime - Hero">
+        <section class="s_anime_hero parallax s_parallax_is_fixed s_parallax_no_overflow_hidden p-2 vh-50 d-flex align-items-center" data-vcss="website_comic/static/src/snippets/s_anime_hero.scss" data-scroll-background-ratio="1" data-name="Anime Hero" data-snippet="anime_hero">
+            <span class="s_parallax_bg oe_img_bg o_bg_img_center b1-bg position-relative" style="background-image: url('/web/image/website_comic.anime_banner'); background-position: 50% 75%;"/>
+            <div class="container ">
             <!-- Content -->
-                <h1 class="text-center">
+                <h1 class="text-center text-primary">
                     Lose Yourself in the Pages.
                 </h1>
-                <p class="text-center">
+                <p class="text-center text-primary opacity-75 fw-light">
                     Explore our curated selection of exceptional manga.
                 </p>
             </div>
         </section>
     </template>
+
+    <!-- <record id="website.s_anime_hero_scss" model="ir.asset">
+        <field name="name">Anime Hero SCSS</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">website_comic/static/src/snippets/s_anime_hero.scss</field>
+    </record> -->
 </odoo>
