@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- tree view  -->
+    <record id="publish_tree" model="ir.ui.view">
+        <field name="name">publish.tree</field>
+        <field name="model">publisher</field>
+        <field name="arch" type="xml">
+            <tree string="Publishing Houses">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <!-- action code -->
+    <record id="publisher_action" model="ir.actions.act_window">
+        <field name="name">Publishers</field>
+        <field name="res_model">publisher</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

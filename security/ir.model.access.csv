@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+website_comic.access_anime_prod,access_anime_prod,website_comic.model_anime_prod,base.group_user,1,1,1,1
+website_comic.access_author,access_author,website_comic.model_author,base.group_user,1,1,1,1
+website_comic.access_publisher,access_publisher,website_comic.model_publisher,base.group_user,1,1,1,1

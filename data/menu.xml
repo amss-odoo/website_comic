@@ -15,7 +15,7 @@
             ('url', '=', '/default-main-menu'),
             ('website_id', '=', 1)]"/>
         <field name="website_id">1</field>
-        <field name="sequence" type="int">2</field>
+        <field name="sequence" type="int">1</field>
     </record>
     <!-- sub-menu of manga  -->
     <record id="categories_menu" model="website.menu">
@@ -70,30 +70,25 @@
         <field name="sequence" type="int">3</field>
     </record> -->
 
-    <!-- <record id="recom_mega_menu" model="website.menu">
+    <record id="recom_menu" model="website.menu">
         <field name="name">Recommendations</field>
-        <field name="url">/recom</field>
+        <field name="url">/recommendations</field>
         <field name="parent_id" search="[
             ('url', '=', '/default-main-menu'),
             ('website_id', '=', 1)]"/>
-        <field name="website_id">1</field>
-        <field name="sequence" type="int">1</field>
-        <field name="is_mega_menu" eval="True"/> 
-        <field name="mega_menu_classes">pd-3</field>
+        <field name="sequence" type="int">3</field>
+        <field name="is_mega_menu">True</field>
         <field name="mega_menu_content" type="html">
-            <section>
-                <t t-call="website.navbar">
-                        <div class="row">
-                            <div class="col-4 h-25">
-                                <img src="/web/image/website_comic.shonen_icon" alt="Shonen Manga" class="w-100"/>
-                            </div>
-                            <div class="col-6 p-2">
-                                <p> One piece is nice </p>
-                            </div>
-                        </div>
-                </t>
+            <section style="z-index:1;">
+                <div class="row">
+                    <div class="row">
+                        <img src="/web/image/website.manga_banner"/>
+                    </div>
+                    <div class="column">
+                        <p>See what our Senpai likes!</p>
+                    </div>
+                </div>
             </section>
         </field>
-    </record> -->
-    <!-- <record id="recom_megam" model="" -->
+    </record>
 </odoo>

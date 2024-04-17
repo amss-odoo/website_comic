@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- form view  -->
+    <record id="anime_form_view" model="ir.ui.view">
+        <field name="name">anime.form</field>
+        <field name="model">anime.prod</field>
+        <field name="arch" type="xml">
+            <form string="New Product">
+                <sheet>
+                    <group>
+                        <h1>
+                            <field name="name" class="oe_title oe_inline" placeholder="Product Name"/>
+                        </h1>
+                    </group>
+                    <group col="4">
+                        <group colspan="2">
+                            <field name="author" class="oe_inline"/>
+                            <field name="volume" class="oe_inline"/>
+                        </group>
+                        <group colspan="2">
+                            <field name="price" class="oe_inline"/>
+                            <field name="image" widget='image' string="Product image" class="oe_avatar" nolabel="1" options="{'size': [200, 200]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description" placeholder="Description" class="oe_inline"/>
+                        </page>
+                        <page string="Details">
+                            <group col="1">
+                                <field name="language" string="Language" class="oe_inline"/>
+                                <field name="edition" string="Edition" class="oe_inline"/>
+                                <field name="publisher" string="Publisher" class="oe_inline"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- tree view -->
+    <record id="anime_tree" model="ir.ui.view">
+        <field name="name">anime.tree</field>
+        <field name="model">anime.prod</field>
+        <field name="arch" type="xml">
+            <tree string="Products">
+                <field name="name"/>
+                <field name="volume"/>
+                <field name="price"/>
+                <field name="language"/>
+                <field name="edition"/>
+            </tree>
+        </field>
+    </record>
+    <!-- action code  -->
+    <record id="anime_action" model="ir.actions.act_window">
+        <field name="name">Store View</field>
+        <field name="res_model">anime.prod</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

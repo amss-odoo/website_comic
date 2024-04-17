@@ -12,8 +12,8 @@
     <!-- custom header -->
     <template id="layout" inherit_id="website.layout" name="Welcome Message">
         <xpath expr="//header" position="before">
-            <!-- Content -->
-            <p class="p-2 bg-secondary text-center text-primary m-0 fs-2">Looking for a recommendation?</p>
+            
+            <p class="p-2 header-banner bg-secondary text-center text-primary m-0 fs-2 ">Looking for a recommendation?</p>
         </xpath>
     </template>
 

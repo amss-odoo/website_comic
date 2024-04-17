@@ -9,6 +9,9 @@
                     <t t-snippet="website_comic.s_anime_hero" t-thumbnail="/website_comic/static/src/img/wbuilder/template_header_opt.jpg">
                         <!-- <keywords>Snippet</keywords> -->
                     </t>
+                    <t t-snippet="website_comic.s_banner" t-thumbnail="/website_comic/static/src/img/wbuilder/template_header_opt.jpg">
+                        <!-- <keywords>Snippet</keywords> -->
+                    </t>
                 </div>
             </div>
         </t>

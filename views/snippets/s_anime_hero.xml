@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="s_anime_hero" name="Anime - Hero">
-        <section class="s_anime_hero parallax s_parallax_is_fixed s_parallax_no_overflow_hidden p-2 vh-50 d-flex align-items-center" data-vcss="website_comic/static/src/snippets/s_anime_hero.scss" data-scroll-background-ratio="1" data-name="Anime Hero" data-snippet="anime_hero">
+        <section class="s_anime_hero parallax s_parallax_is_fixed s_parallax_no_overflow_hidden p-2 d-flex align-items-center" data-vcss="website_comic/static/src/snippets/s_anime_hero.scss" data-scroll-background-ratio="1" data-name="Anime Hero" data-snippet="anime_hero">
             <span class="s_parallax_bg oe_img_bg o_bg_img_center b1-bg position-relative" style="background-image: url('/web/image/website_comic.anime_banner'); background-position: 50% 75%;"/>
-            <div class="container ">
+            <div class="container py-4">
             <!-- Content -->
                 <h1 class="text-center text-primary">
                     Lose Yourself in the Pages.

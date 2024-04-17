@@ -13,7 +13,7 @@
                 <div id="wrap" class="oe_structure">
 
                     <!-- Content -->
-                    <div class="b1-bg position-relative d-flex justify-content-center align-items-center" style="background-image: url('/web/image/website_comic.manga_banner'); background-repeat: no-repeat;">
+                    <div class="b2-bg position-relative d-flex justify-content-center align-items-center" style="background-image: url('/web/image/website_comic.manga_banner'); background-repeat: no-repeat;">
                         <h1 class="text-center text-primary p-3 z-1" style="z-index: 1;">Categories</h1>
                     </div>
                     <div class="container my-5 ">

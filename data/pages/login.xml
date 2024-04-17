@@ -7,6 +7,7 @@
                     <div class="row align-items-center justify-content-between">
                         <div class="col-4 login-icon position-relative">
                             <img src="/web/image/website_comic.login_icon" alt="Anime character icon" class="w-100 border border-primary rounded-circle"/>
+                            <p class="text-center mt-2 text-primary fs-3">Ohayo!</p>
                         </div>
                         <div class="col-6 form_glass p-3">
                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
@@ -20,12 +21,12 @@
                             </div>
 
                             <div class="mb-3 field-login">
-                                <label for="login" class="form-label fs-3 text-light">Email</label>
+                                <label for="login" class="form-label fs-3 text-primary">Email</label>
                                 <input type="text" placeholder="Email" name="login" t-att-value="login" id="login" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="username" autofocus="autofocus" autocapitalize="off"/>
                             </div>
 
                             <div class="mb-3">
-                                <label for="password" class="form-label fs-3 text-light">Password</label>
+                                <label for="password" class="form-label fs-3 text-primary">Password</label>
                                 <input type="password" placeholder="Password" name="password" id="password" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="current-password" t-att-autofocus="'autofocus' if login else None" maxlength="4096"/>
                             </div>
 
@@ -37,7 +38,7 @@
                             </p>
 
                             <div t-attf-class="clearfix oe_login_buttons text-center gap-1 d-grid mb-1 {{'pt-2' if form_small else 'pt-3'}}">
-                                <button type="submit" class="btn btn-primary">Log in</button>
+                                <button type="submit" class="btn btn-login">Log in</button>
                                 <t t-if="debug">
                                     <button type="submit" name="redirect" value="/web/become" class="btn btn-link btn-sm">Log in as superuser</button>
                                 </t>
